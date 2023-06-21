@@ -1,3 +1,8 @@
-function SinglePostsPage() {}
+import React from "react";
+import PostContent from "../../components/posts/posts-detail/post-content";
 
-export default SinglePostsPage;
+function PostDetailPage() {
+  return <PostContent />;
+}
+
+export default PostDetailPage;

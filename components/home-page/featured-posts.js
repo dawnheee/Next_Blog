@@ -1,11 +1,12 @@
 import React from "react";
-import classes from "./featured-posts.moodule.css";
+import classes from "./featured-posts.module.css";
 import PostsGrid from "../posts/posts-grid";
-function FeaturedPosts(props) {
+function FeaturedPosts({ posts }) {
+  console.log(posts);
   return (
     <section className={classes.latest}>
       <h2>Featured Posts</h2>
-      <PostsGrid posts={props.posts} />
+      <PostsGrid posts={posts} />
     </section>
   );
 }
